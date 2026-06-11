@@ -1,0 +1,20 @@
+# Netlify build config for the Crescent Car Reports admin app (Next.js).
+#
+# Netlify's Next runtime (@netlify/plugin-nextjs, pinned below) handles App
+# Router SSR, API routes and server actions — no extra config needed. Deploy
+# directly with the CLI from this folder:  netlify deploy --build --prod
+#
+# Set production environment variables in the Netlify UI
+# (Site settings -> Environment variables), NOT here. At minimum:
+#   NEXT_PUBLIC_SUPABASE_URL            -> Crescent Car Reports project (jwslaqufrdoodsxasxnr)
+#   NEXT_PUBLIC_SUPABASE_ANON_KEY       -> same project's anon (publishable) key
+#   SUPABASE_SERVICE_ROLE_KEY           -> same project's service-role key
+# Plus any auth / Google Calendar / Sentry keys the app uses.
+# Don't commit real secrets to this file.
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

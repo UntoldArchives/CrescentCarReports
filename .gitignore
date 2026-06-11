@@ -1,0 +1,43 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+Thumbs.db
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env
+.env*.local
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# editor
+.vs/
+.vscode/
+.idea/
+
+# dev/test artifacts (local only)
+.codex-devserver.*.log
+.tmp_dev.log
+.codex_pdf_shots/
+.mcp.json
+
+# internal docs / source assets (kept local, not part of the deploy)
+*.pdf
